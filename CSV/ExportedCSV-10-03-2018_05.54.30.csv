@@ -1,0 +1,5 @@
+ID,Title,AutomationStatus,
+66140,Verify that MADP agent supports multiple paging option and Data should remain intact on navigating from one page to another .,Not Automated,
+66142,Verify that the apps (Active and Paused both) deleted by Customer Admin doesn't appear in  App Catalogue.,Planned,
+66145,Verify that MADP agent ignores a Delete command if the relevant application is not yet installed on the device.,Planned,
+66147,Verify the icon of a web application should change when MADP agent receives a 'Blocked' status for any installed application.,Planned,

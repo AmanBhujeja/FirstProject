@@ -1,0 +1,10 @@
+2018-10-05 12:39:04 - -INFO : Please Choose: 
+1. Update Automation Status in TFS 
+2. Export Total Test Cases as CSV
+2018-10-05 12:39:07 - -INFO : Enter Username to connect to TFS Server ( SOTI username without domain)
+2018-10-05 12:39:09 - -INFO : Enter Password to connect to TFS Server
+2018-10-05 12:39:09 - -INFO : **********Creating Connection with TFS**********
+2018-10-05 12:39:09 - -DEBUG: Created a new TFSConnection, sessionId: [faf07f19-f894-499f-b328-282796b37eae], server URI: [http://taipan:8080/tfs/]
+2018-10-05 12:39:09 - -INFO : **********Connection successfully created**********
+2018-10-05 12:39:09 - -INFO : Enter TFS Project Name 
+

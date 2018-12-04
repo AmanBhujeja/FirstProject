@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %x %-5p: %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="DEBUG" />
+			<param name="AcceptOnMatch" value="FALSE" />
+		</filter>
+		<filter class="org.apache.log4j.varia.LevelMatchFilter">
+			<param name="LevelToMatch" value="INFO" />
+			<param name="AcceptOnMatch" value="TRUE" />
+		</filter>
+	</appender>
+
+
+	<appender name="RollingFile" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="./log/${logFile.name}.log" />
+		<param name="immediateFlush" value="true"/>
+		<param name="append" value="false" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %x %-5p: %m%n" />
+		</layout>
+
+	</appender>
+
+
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="RollingFile" />
+		<appender-ref ref="console" />
+	</root>
+</log4j:configuration>
